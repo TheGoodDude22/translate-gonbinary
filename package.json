@@ -1,0 +1,47 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "translate-gonbinary",
+  "title": "Translate Gonbinary",
+  "description": "Translate text to Gonbinary and back!",
+  "icon": "gonb-icon.png",
+  "author": "TheGoodDude22",
+  "categories": [
+    "Fun"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "index",
+      "title": "Translate Gonbinary",
+      "description": "Translate text to Gonbinary and back!",
+      "mode": "view",
+      "preferences": [
+        {
+          "name": "responsiveCopy",
+          "label": "Responsive Copy Keybinds",
+          "description": "Whether the copy keybinds change to match the selected field.",
+          "type": "checkbox",
+          "required": false,
+          "default": true
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.38.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint"
+  }
+}
